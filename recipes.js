@@ -80,7 +80,7 @@ newRecipe
     );
   })
   .then(recipe => {
-    return newRecipe.remove({ title: "Carrot Cake" });
+    return newRecipe.deleteOne({ title: "Carrot Cake" });
   })
   .then(recipe => {
     mongoose.connection.close();
